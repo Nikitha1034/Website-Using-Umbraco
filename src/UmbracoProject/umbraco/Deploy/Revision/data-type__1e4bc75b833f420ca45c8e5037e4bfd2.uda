@@ -1,0 +1,31 @@
+{
+  "Name": "OurWorks - Tags - Dropdown",
+  "Alias": "",
+  "EditorAlias": "Umbraco.DropDown.Flexible",
+  "DatabaseType": "Nvarchar",
+  "Configuration": {
+    "multiple": false,
+    "items": [
+      {
+        "id": 1,
+        "value": "Tag1"
+      },
+      {
+        "id": 2,
+        "value": "Tag2"
+      },
+      {
+        "id": 3,
+        "value": "Tag3"
+      },
+      {
+        "id": 4,
+        "value": "Tag4"
+      }
+    ]
+  },
+  "Udi": "umb://data-type/1e4bc75b833f420ca45c8e5037e4bfd2",
+  "Dependencies": [],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.DataTypeArtifact",
+  "__version": "13.1.0"
+}

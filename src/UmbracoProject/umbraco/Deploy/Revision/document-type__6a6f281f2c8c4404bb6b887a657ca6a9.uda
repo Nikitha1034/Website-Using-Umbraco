@@ -1,0 +1,60 @@
+{
+  "Name": "TeamMembers",
+  "Alias": "teamMembers",
+  "AllowedTemplates": [],
+  "HistoryCleanup": {},
+  "Icon": "icon-client color-lime",
+  "Thumbnail": "folder.png",
+  "Permissions": {
+    "AllowedChildContentTypes": []
+  },
+  "Parent": "umb://document-type-container/9bd9d88a920c40d99fa38643a4040eac",
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "d3041223-7a37-4eab-bc8d-f9ed74ae7ac5",
+      "Name": "Members",
+      "Alias": "members",
+      "PropertyTypes": [
+        {
+          "Key": "483bdce3-411a-4b45-83d4-77d726d0fd08",
+          "Alias": "memberName",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Name": "MemberName"
+        },
+        {
+          "Key": "7abce02d-79ff-4179-b858-d882ff1dff03",
+          "Alias": "memberPhoto",
+          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+          "Name": "MemberPhoto",
+          "SortOrder": 2
+        },
+        {
+          "Key": "aafca0e1-3e1a-4d10-bcf6-fe8a210c3a37",
+          "Alias": "memberRole",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Name": "MemberRole",
+          "SortOrder": 1
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/6a6f281f2c8c4404bb6b887a657ca6a9",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://document-type-container/9bd9d88a920c40d99fa38643a4040eac",
+      "Ordering": true
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "13.1.0"
+}

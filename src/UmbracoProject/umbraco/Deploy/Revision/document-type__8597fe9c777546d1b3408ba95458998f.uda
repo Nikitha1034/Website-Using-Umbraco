@@ -1,0 +1,60 @@
+{
+  "Name": "Testimonials",
+  "Alias": "testimonials",
+  "AllowedTemplates": [],
+  "HistoryCleanup": {},
+  "Icon": "icon-umb-members color-lime",
+  "Thumbnail": "folder.png",
+  "Permissions": {
+    "AllowedChildContentTypes": []
+  },
+  "Parent": "umb://document-type-container/9bd9d88a920c40d99fa38643a4040eac",
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "fdb937cf-6fac-40c0-8d50-311ae474f08e",
+      "Name": "Info",
+      "Alias": "info",
+      "PropertyTypes": [
+        {
+          "Key": "4874e7ea-e828-47c9-8edd-cec36b39a46f",
+          "Alias": "testimonialPosition",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Name": "TestimonialPosition",
+          "SortOrder": 1
+        },
+        {
+          "Key": "96a93f70-3624-49c5-8a2a-464605e5110a",
+          "Alias": "testimonialName",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Name": "TestimonialName"
+        },
+        {
+          "Key": "d28115a2-44fc-44ad-ae56-a5c8005f7c6b",
+          "Alias": "testimonialInfo",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+          "Name": "TestimonialInfo",
+          "SortOrder": 2
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/8597fe9c777546d1b3408ba95458998f",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://document-type-container/9bd9d88a920c40d99fa38643a4040eac",
+      "Ordering": true
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "13.1.0"
+}

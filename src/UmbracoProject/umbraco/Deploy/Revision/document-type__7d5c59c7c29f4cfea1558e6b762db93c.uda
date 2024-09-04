@@ -1,0 +1,76 @@
+{
+  "Name": "Pricing",
+  "Alias": "pricing",
+  "AllowedTemplates": [],
+  "HistoryCleanup": {},
+  "Icon": "icon-price-dollar color-lime",
+  "Thumbnail": "folder.png",
+  "Description": ".",
+  "Permissions": {
+    "AllowedChildContentTypes": []
+  },
+  "Parent": "umb://document-type-container/9bd9d88a920c40d99fa38643a4040eac",
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "a5811a39-99ac-4b44-916f-f1d3733494bf",
+      "Name": "Details",
+      "Alias": "details",
+      "PropertyTypes": [
+        {
+          "Key": "68268f84-7496-48ad-a90d-347ffd45b9ac",
+          "Alias": "planCurrencySymbol",
+          "DataType": "umb://data-type/b68e6dfb26ef42f1933e4edd3b6fb90d",
+          "Name": "PlanCurrencySymbol",
+          "SortOrder": 3
+        },
+        {
+          "Key": "70026094-d829-4c7a-af4c-116b1d867222",
+          "Alias": "planName",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Name": "PlanName"
+        },
+        {
+          "Key": "aaf3a9ff-308a-4f38-8d94-3985e2dbd467",
+          "Alias": "planPrice",
+          "DataType": "umb://data-type/2e6d3631066e44b8aec496f09099b2b5",
+          "Name": "PlanPrice",
+          "SortOrder": 1
+        },
+        {
+          "Key": "b6fe13e2-e047-4b43-9647-c33e808b72e0",
+          "Alias": "planFeatures",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+          "Name": "PlanFeatures",
+          "SortOrder": 2
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/7d5c59c7c29f4cfea1558e6b762db93c",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://data-type/2e6d3631066e44b8aec496f09099b2b5",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://data-type/b68e6dfb26ef42f1933e4edd3b6fb90d",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://document-type-container/9bd9d88a920c40d99fa38643a4040eac",
+      "Ordering": true
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "13.1.0"
+}

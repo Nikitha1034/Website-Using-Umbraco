@@ -1,0 +1,29 @@
+{
+  "Name": "MultipleFunFacts",
+  "Alias": "multipleFunFacts",
+  "AllowedTemplates": [],
+  "HistoryCleanup": {},
+  "Icon": "icon-outdent color-amber",
+  "Thumbnail": "folder.png",
+  "Permissions": {
+    "AllowedChildContentTypes": [
+      "umb://document-type/45cbe4e5fa434262ae01e8f79ab2e4be"
+    ]
+  },
+  "Parent": "umb://document-type-container/9bd9d88a920c40d99fa38643a4040eac",
+  "CompositionContentTypes": [],
+  "PropertyGroups": [],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/36fe6e90ee8843c78b46a97196d31f38",
+  "Dependencies": [
+    {
+      "Udi": "umb://document-type-container/9bd9d88a920c40d99fa38643a4040eac",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://document-type/45cbe4e5fa434262ae01e8f79ab2e4be"
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "13.1.0"
+}

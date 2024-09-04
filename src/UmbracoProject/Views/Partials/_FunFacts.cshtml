@@ -1,0 +1,19 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.MultipleFunFacts>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels
+
+<section id="fun-facts">
+    <div class="container">
+        <div class="row">
+            @foreach (var fact in Model.Children<ContentModels.FunFacts>())
+            {
+                <div class="col-sm-6 col-md-3">
+                    <div class="fun-fact text-center">
+                        <h3><i class="@fact.FactIconClass"></i> <span class="st-counter">@fact.FactNumber</span></h3>
+                        <p>@fact.FactName</p>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>

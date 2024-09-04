@@ -1,0 +1,38 @@
+{
+  "Name": "Image Cropper",
+  "Alias": "",
+  "EditorAlias": "Umbraco.ImageCropper",
+  "Configuration": {
+    "crops": [
+      {
+        "alias": "MediaForWorks",
+        "width": 1200,
+        "height": 600
+      },
+      {
+        "alias": "MediaWithCrops",
+        "width": 1600,
+        "height": 600
+      },
+      {
+        "alias": "MediaForTeam",
+        "width": 570,
+        "height": 675
+      },
+      {
+        "alias": "TestimonialsImage",
+        "width": 2000,
+        "height": 600
+      },
+      {
+        "alias": "MediaForAboutUS",
+        "width": 800,
+        "height": 530
+      }
+    ]
+  },
+  "Udi": "umb://data-type/1df9f033e6d4451fb8d2e0cbc50a836f",
+  "Dependencies": [],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.DataTypeArtifact",
+  "__version": "13.1.0"
+}

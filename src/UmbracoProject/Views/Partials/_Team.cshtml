@@ -1,0 +1,42 @@
+﻿@using Umbraco.Cms.Core.Models.PublishedContent
+@using Umbraco.Extensions
+@model IEnumerable<Umbraco.Cms.Web.Common.PublishedModels.TeamMembers>
+
+<section id="our-team">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title">
+                    <h1>Our Team</h1>
+                    <span class="st-border"></span>
+                </div>
+            </div>
+
+            @foreach (var teamMember in Model)
+            {
+                var memberName = teamMember.MemberName;
+                var memberRole = teamMember.MemberRole;
+                var memberPhoto = teamMember.MemberPhoto;
+                var photoUrl = memberPhoto?.GetCropUrl("MediaForTeam");
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="team-member">
+                        <div class="member-image">
+                        <img class="img-responsive" src="@photoUrl" alt="@memberName">
+                        <div class="member-social">
+                            <a href=""><i class="fa fa-circle"></i></a>
+                            <a href=""><i class="fa fa-umbrella"></i></a>
+                            <a href=""><i class="fa fa-google-plus"></i></a>
+                            <a href=""><i class="fa fa-linkedin"></i></a>
+                        </div>
+                        </div>
+                        <div class="member-info">
+                            <h4>@memberName</h4>
+                            <span>@memberRole</span>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>

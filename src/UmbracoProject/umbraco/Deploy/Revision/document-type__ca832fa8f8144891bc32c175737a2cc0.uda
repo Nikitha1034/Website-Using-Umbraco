@@ -1,0 +1,30 @@
+{
+  "Name": "MultipleSliderImages",
+  "Alias": "multipleSliderImages",
+  "AllowedTemplates": [],
+  "HistoryCleanup": {},
+  "Icon": "icon-outdent color-amber",
+  "Thumbnail": "folder.png",
+  "IsContainer": true,
+  "Permissions": {
+    "AllowedChildContentTypes": [
+      "umb://document-type/6ba2b1586cb14687ae3ef9ed955a0197"
+    ]
+  },
+  "Parent": "umb://document-type-container/9bd9d88a920c40d99fa38643a4040eac",
+  "CompositionContentTypes": [],
+  "PropertyGroups": [],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/ca832fa8f8144891bc32c175737a2cc0",
+  "Dependencies": [
+    {
+      "Udi": "umb://document-type-container/9bd9d88a920c40d99fa38643a4040eac",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://document-type/6ba2b1586cb14687ae3ef9ed955a0197"
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "13.1.0"
+}

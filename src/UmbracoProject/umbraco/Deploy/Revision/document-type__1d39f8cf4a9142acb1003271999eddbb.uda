@@ -1,0 +1,30 @@
+{
+  "Name": "MultiplePricing",
+  "Alias": "multiplePricing",
+  "AllowedTemplates": [],
+  "HistoryCleanup": {},
+  "Icon": "icon-outdent color-amber",
+  "Thumbnail": "folder.png",
+  "IsContainer": true,
+  "Permissions": {
+    "AllowedChildContentTypes": [
+      "umb://document-type/7d5c59c7c29f4cfea1558e6b762db93c"
+    ]
+  },
+  "Parent": "umb://document-type-container/9bd9d88a920c40d99fa38643a4040eac",
+  "CompositionContentTypes": [],
+  "PropertyGroups": [],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/1d39f8cf4a9142acb1003271999eddbb",
+  "Dependencies": [
+    {
+      "Udi": "umb://document-type-container/9bd9d88a920c40d99fa38643a4040eac",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://document-type/7d5c59c7c29f4cfea1558e6b762db93c"
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "13.1.0"
+}

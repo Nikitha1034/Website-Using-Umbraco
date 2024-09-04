@@ -1,0 +1,44 @@
+﻿@using Umbraco.Forms.Web
+@using Umbraco.Forms.Core.Models
+@using Umbraco.Cms.Core.Models
+@using Umbraco.Cms.Web.Common.PublishedModels
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.ContactUS>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels
+
+@{
+    // Initialize variables
+    var contactHeader = Model.Value<string>("contactName") ?? "Contact Us";
+    var contactBlurb = Model.Value<string>("contactInfo") ?? "Get in touch with us.";
+    var contactAddress = Model.Value<string>("contactAddress") ?? "Your Address";
+    var contactNumber = Model.Value<string>("contactNumber") ?? "Contact Number";
+    var contactEmail = Model.Value<string>("contactEmail") ?? "Contact Email";
+    var contactWebsite = Model.Value<string>("contactWebsite") ?? "Contact Website";
+}
+
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title">
+                    <h1>@contactHeader</h1>
+                    <span class="st-border"></span>
+                </div>
+            </div>
+            <div class="col-md-4 contact-info">
+                <p class="contact-content">@contactBlurb</p>
+                <p class="st-address"><i class="fa fa-map-marker"></i> <strong>@contactAddress</strong></p>
+                <p class="st-phone"><i class="fa fa-phone"></i> <strong>@contactNumber</strong></p>
+                <p class="st-email"><i class="fa fa-envelope"></i> <strong><a href="mailto:@contactEmail">@contactEmail</a></strong></p>
+                <p class="st-website"><i class="fa fa-globe"></i> <strong><a href="http://@contactWebsite">@contactWebsite</a></strong></p>
+            </div>
+            <div class="col-md-8 contact-form">
+                @Html.Raw(Model.Value("formContainer"))
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+

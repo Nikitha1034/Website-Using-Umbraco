@@ -1,0 +1,14 @@
+{
+  "Name": "FunFacts - FactIconClass - Dropdown",
+  "Alias": "",
+  "EditorAlias": "Umbraco.DropDown.Flexible",
+  "DatabaseType": "Nvarchar",
+  "Configuration": {
+    "multiple": false,
+    "items": []
+  },
+  "Udi": "umb://data-type/40bbce370ab645aeb9c31d85d72ff9c9",
+  "Dependencies": [],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.DataTypeArtifact",
+  "__version": "13.1.0"
+}

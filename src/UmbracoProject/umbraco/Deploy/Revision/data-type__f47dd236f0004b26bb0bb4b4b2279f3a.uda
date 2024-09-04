@@ -1,0 +1,15 @@
+{
+  "Name": "Home - Form Picker",
+  "Alias": "",
+  "EditorAlias": "UmbracoForms.FormPicker",
+  "DatabaseType": "Nvarchar",
+  "Configuration": {
+    "allowedForms": [
+      "17c0814d-72d9-4886-a68a-e2b6617a1ef7"
+    ]
+  },
+  "Udi": "umb://data-type/f47dd236f0004b26bb0bb4b4b2279f3a",
+  "Dependencies": [],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.DataTypeArtifact",
+  "__version": "13.1.0"
+}

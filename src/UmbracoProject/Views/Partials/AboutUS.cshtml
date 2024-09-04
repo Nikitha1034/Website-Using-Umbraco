@@ -1,0 +1,13 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Umbraco.Cms.Web.Common.PublishedModels.AboutUS>
+@using Umbraco.Cms.Web.Common.PublishedModels
+@using Umbraco.Cms.Core.Models.PublishedContent
+
+@if (Model != null)
+{
+    var mediaItem = Model.MemberImage as IPublishedContent;
+    var cropUrl = mediaItem?.GetCropUrl("MediaForAboutUS");
+
+    <div class="@(ViewData["IsFirstItem"] != null && (bool)ViewData["IsFirstItem"] ? "item active" : "item")">
+        <img src="@cropUrl" alt="@mediaItem.Name" />
+    </div>
+}

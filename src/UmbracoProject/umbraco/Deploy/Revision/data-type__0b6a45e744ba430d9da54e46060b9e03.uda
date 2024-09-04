@@ -1,0 +1,31 @@
+{
+  "Name": "Dropdown",
+  "Alias": "",
+  "EditorAlias": "Umbraco.DropDown.Flexible",
+  "DatabaseType": "Nvarchar",
+  "Configuration": {
+    "multiple": false,
+    "items": [
+      {
+        "id": 1,
+        "value": "fa fa-desktop"
+      },
+      {
+        "id": 2,
+        "value": "fa fa-umbrella"
+      },
+      {
+        "id": 3,
+        "value": "fa fa-hat"
+      },
+      {
+        "id": 4,
+        "value": "fa fa-circle"
+      }
+    ]
+  },
+  "Udi": "umb://data-type/0b6a45e744ba430d9da54e46060b9e03",
+  "Dependencies": [],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.DataTypeArtifact",
+  "__version": "13.1.0"
+}

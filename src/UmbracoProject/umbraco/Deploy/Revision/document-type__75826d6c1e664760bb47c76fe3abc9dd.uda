@@ -1,0 +1,30 @@
+{
+  "Name": "MultipleOurWorks",
+  "Alias": "multipleOurWorks",
+  "AllowedTemplates": [],
+  "HistoryCleanup": {},
+  "Icon": "icon-outdent color-amber",
+  "Thumbnail": "folder.png",
+  "IsContainer": true,
+  "Permissions": {
+    "AllowedChildContentTypes": [
+      "umb://document-type/79ea3d82f7ff40f3bbf92cfa94ff87e0"
+    ]
+  },
+  "Parent": "umb://document-type-container/9bd9d88a920c40d99fa38643a4040eac",
+  "CompositionContentTypes": [],
+  "PropertyGroups": [],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/75826d6c1e664760bb47c76fe3abc9dd",
+  "Dependencies": [
+    {
+      "Udi": "umb://document-type-container/9bd9d88a920c40d99fa38643a4040eac",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://document-type/79ea3d82f7ff40f3bbf92cfa94ff87e0"
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "13.1.0"
+}

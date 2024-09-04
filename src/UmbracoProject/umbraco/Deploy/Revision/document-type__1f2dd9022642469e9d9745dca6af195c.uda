@@ -1,0 +1,26 @@
+{
+  "Name": "Blog",
+  "Alias": "blog",
+  "DefaultTemplate": "umb://template/cb4f46998b9747db9f466d250e764337",
+  "AllowedTemplates": [
+    "umb://template/cb4f46998b9747db9f466d250e764337"
+  ],
+  "HistoryCleanup": {},
+  "Icon": "icon-notepad-alt color-black",
+  "Thumbnail": "folder.png",
+  "Permissions": {
+    "AllowedChildContentTypes": []
+  },
+  "CompositionContentTypes": [],
+  "PropertyGroups": [],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/1f2dd9022642469e9d9745dca6af195c",
+  "Dependencies": [
+    {
+      "Udi": "umb://template/cb4f46998b9747db9f466d250e764337",
+      "Ordering": true
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "13.1.0"
+}

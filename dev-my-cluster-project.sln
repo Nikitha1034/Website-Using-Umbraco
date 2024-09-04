@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D45369CA-9FDD-4B5E-925A-B2CB4976EEB4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UmbracoProject", "src\UmbracoProject\UmbracoProject.csproj", "{BB4ADF82-C330-49BD-91E4-0CE5A02E37FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB4ADF82-C330-49BD-91E4-0CE5A02E37FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB4ADF82-C330-49BD-91E4-0CE5A02E37FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB4ADF82-C330-49BD-91E4-0CE5A02E37FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB4ADF82-C330-49BD-91E4-0CE5A02E37FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BB4ADF82-C330-49BD-91E4-0CE5A02E37FC} = {D45369CA-9FDD-4B5E-925A-B2CB4976EEB4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5AF616C7-F472-4FF1-9482-930D4E2531BE}
+	EndGlobalSection
+EndGlobal

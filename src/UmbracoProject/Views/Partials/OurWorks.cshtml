@@ -1,0 +1,71 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.Home>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels
+
+<section id="our-works">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title">
+                    <h1>Our Works</h1>
+                    <span class="st-border"></span>
+                </div>
+            </div>
+
+            <div class="portfolio-wrapper">
+                <div class="col-md-12">
+                    @{
+                        var multipleOurWorks = Model.Children<ContentModels.MultipleOurWorks>().FirstOrDefault();
+                        var allContentTags = new List<string> { "TAG1", "TAG2", "TAG3", "TAG4", "TAG5", "TAG6" };
+                    }
+                    <ul class="filter">
+                        <li>
+                            <a class="active" href="javascript:void(0);" onclick="filterItems('*')">All</a>
+                        </li>
+                        @foreach (var tag in allContentTags)
+                        {
+                            <li>
+                                <a href="javascript:void(0);" onclick="filterItems('@tag.ToLower()')">@tag</a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+
+                <div class="portfolio-items row">
+                    @if (multipleOurWorks != null)
+                    {
+                        var worksItems = multipleOurWorks.Children
+                            .Where(x => x.ContentType.Alias == "ourWorks").ToList();
+
+                        foreach (var item in worksItems)
+                        {
+                            var tags = item.Value<IEnumerable<string>>("tags")?.Select(tag => tag.ToLower()) ?? Enumerable.Empty<string>();
+
+                            <div class="col-md-4 col-sm-6 work-grid @string.Join(" ", tags)">
+                                <div class="portfolio-content">
+                                    @{
+                                        var image = item.Value<IPublishedContent>("image");
+                                        var imageSrc = image != null ? image.GetCropUrl("MediaForWorks") : string.Empty;
+                                        var title = item.Value<string>("title");
+                                        var littleDescription = item.Value<string>("littleDescription");
+                                    }
+                                    @if (!string.IsNullOrEmpty(imageSrc))
+                                    {
+                                        <img class="img-responsive" src="@imageSrc" alt="@title">
+                                        <div class="portfolio-overlay">
+                                            <a href="@imageSrc" data-lightbox="portfolio">
+                                                <i class="fa fa-camera-retro"></i>
+                                            </a>
+                                            <h5>@title</h5>
+                                            <p>@littleDescription</p>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,30 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Umbraco.Cms.Web.Common.PublishedModels.Home>
+@using Umbraco.Cms.Web.Common.PublishedModels
+@{
+    var multipleTestimonials = Model.Children<MultipleTestimonials>().FirstOrDefault();
+    var testimonials = multipleTestimonials?.Children<Testimonials>() ?? Enumerable.Empty<Testimonials>();
+    var backgroundImage = Model.Value<IPublishedContent>("testimonialsBackgroundImage")?.GetCropUrl("TestimonialsImage");
+}
+
+<section id="testimonial" class="parallax" style="background-image: url('@backgroundImage');">
+    <div class="container">
+        <div class="row">
+            <div class="overlay"></div>
+            <div class="col-md-8 col-md-offset-2 col-sm-12">
+                <div class="st-testimonials">
+                    @foreach (var testimonial in testimonials)
+                    {
+                        <div class="item text-center">
+                            <p>@testimonial.TestimonialInfo</p>
+                            <div class="st-border"></div>
+                            <div class="client-info">
+                                <h5>@testimonial.TestimonialName</h5>
+                                <span>@testimonial.TestimonialPosition</span>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

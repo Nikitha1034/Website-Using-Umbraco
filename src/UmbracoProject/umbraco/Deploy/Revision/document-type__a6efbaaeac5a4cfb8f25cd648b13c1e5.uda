@@ -1,0 +1,89 @@
+{
+  "Name": "ContactUS",
+  "Alias": "contactUS",
+  "AllowedTemplates": [],
+  "HistoryCleanup": {},
+  "Icon": "icon-phone-ring color-purple",
+  "Thumbnail": "folder.png",
+  "Permissions": {
+    "AllowedChildContentTypes": []
+  },
+  "Parent": "umb://document-type-container/9bd9d88a920c40d99fa38643a4040eac",
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "a202a8e3-3198-48d6-9a8a-c95c24cc0ce1",
+      "Name": "Contact Form",
+      "Alias": "contactForm",
+      "PropertyTypes": [
+        {
+          "Key": "16ad877a-0b8b-4209-951d-55b0998f02b7",
+          "Alias": "contactInfo",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+          "Name": "ContactInfo",
+          "SortOrder": 4
+        },
+        {
+          "Key": "189e44ff-f45d-44b5-b018-5c3fb69081f7",
+          "Alias": "contactEmail",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Name": "ContactEmail",
+          "SortOrder": 2
+        },
+        {
+          "Key": "35d1096a-70d6-4fd4-9575-b2ee61bc2b34",
+          "Alias": "contactAddress",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Name": "ContactAddress"
+        },
+        {
+          "Key": "3e6446b2-5a42-4ec2-86d2-979f60950081",
+          "Alias": "contactNumber",
+          "DataType": "umb://data-type/2e6d3631066e44b8aec496f09099b2b5",
+          "Name": "ContactNumber",
+          "SortOrder": 1
+        },
+        {
+          "Key": "6a379bae-de85-4fbe-93cc-f28e2735efe6",
+          "Alias": "formContainer",
+          "DataType": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
+          "Name": "FormContainer",
+          "SortOrder": 5
+        },
+        {
+          "Key": "a8dc8331-8eba-4b5a-9629-bf2186f2ef72",
+          "Alias": "contactWebsite",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Name": "ContactWebsite",
+          "SortOrder": 3
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/a6efbaaeac5a4cfb8f25cd648b13c1e5",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://data-type/2e6d3631066e44b8aec496f09099b2b5",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://document-type-container/9bd9d88a920c40d99fa38643a4040eac",
+      "Ordering": true
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "13.1.0"
+}

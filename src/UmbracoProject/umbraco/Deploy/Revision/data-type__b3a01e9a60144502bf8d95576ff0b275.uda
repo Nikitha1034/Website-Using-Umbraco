@@ -1,0 +1,13 @@
+{
+  "Name": "test the form - testform - Form Picker",
+  "Alias": "",
+  "EditorAlias": "UmbracoForms.FormPicker",
+  "DatabaseType": "Nvarchar",
+  "Configuration": {
+    "allowedForms": []
+  },
+  "Udi": "umb://data-type/b3a01e9a60144502bf8d95576ff0b275",
+  "Dependencies": [],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.DataTypeArtifact",
+  "__version": "13.1.0"
+}

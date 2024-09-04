@@ -1,0 +1,24 @@
+﻿
+
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Umbraco.Cms.Web.Common.PublishedModels.SliderImages>
+@using Umbraco.Cms.Web.Common.PublishedModels
+
+@if (Model != null)
+{
+    var mediaItem = Model.CarouselImage as Umbraco.Cms.Core.Models.PublishedContent.IPublishedContent;
+    if (mediaItem != null)
+    {
+        var cropUrl = mediaItem.GetCropUrl("MediaWithCrops"); 
+        <div class="item" style="background-image: url('@cropUrl')">
+            <div class="carousel-caption container">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <h1>@Model.CarouselHeading</h1>
+                        <h2>@Model.CarouselSubHeading</h2>
+                        <p>@Model.CarouselDescription</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+}

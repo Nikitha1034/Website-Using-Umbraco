@@ -1,0 +1,27 @@
+{
+  "Name": "Pricing - PlanCurrencySymbol - Dropdown",
+  "Alias": "",
+  "EditorAlias": "Umbraco.DropDown.Flexible",
+  "DatabaseType": "Nvarchar",
+  "Configuration": {
+    "multiple": false,
+    "items": [
+      {
+        "id": 1,
+        "value": "$"
+      },
+      {
+        "id": 2,
+        "value": "€"
+      },
+      {
+        "id": 3,
+        "value": "£"
+      }
+    ]
+  },
+  "Udi": "umb://data-type/b68e6dfb26ef42f1933e4edd3b6fb90d",
+  "Dependencies": [],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.DataTypeArtifact",
+  "__version": "13.1.0"
+}

@@ -1,0 +1,32 @@
+{
+  "Deploy": {
+    "Project": {
+      "Name": "my cluster project",
+      "Alias": "my-cluster-project",
+      "Id": "0b513b02-b646-4dc6-a19a-0afd204bb5db",
+      "Workspaces": [
+        {
+          "Id": "75ac76c3-b5e4-456f-9ec2-e78b979d75cc",
+          "Name": "Development",
+          "Type": "development",
+          "Url": "https://dev-my-cluster-project.useast01.umbraco.io"
+        },
+        {
+          "Id": "d600a3b8-afb9-43cd-8e8e-7585b7f6515e",
+          "Name": "Live",
+          "Type": "live",
+          "Url": "https://my-cluster-project.useast01.umbraco.io"
+        }
+      ]
+    },
+    "Settings": {
+      "ApiKey": "14FA050591160D09E969F8BBA34F2CE1D9862389"
+    }
+  },
+  "Identity": {
+    "ClientId": "0297c0f6-83ad-4481-9ae2-07a3f5475333",
+    "ClientSecret": "Q5~T526ixOHlj47lg7Mu7_.zN1fK.7ua.9",
+    "EnvironmentId": "d600a3b8-afb9-43cd-8e8e-7585b7f6515e",
+    "LocalLoginRedirectUri": "https://redirect.identity.umbraco.com"
+  }
+}

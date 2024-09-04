@@ -1,0 +1,33 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels
+@model IEnumerable<Umbraco.Cms.Web.Common.PublishedModels.Pricing>
+
+<section id="pricing">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title">
+                    <h1>Pricing</h1>
+                    <span class="st-border"></span>
+                </div>
+            </div>
+
+            @foreach (var pricingItem in Model)
+            {
+                <div class="col-sm-4">
+                    <div class="st-pricing text-center">
+                        <h5>@pricingItem.PlanName</h5>
+                        <h3>@pricingItem.PlanCurrencySymbol @pricingItem.PlanPrice</h3>
+                        <div class="st-border"></div>
+                        <ul>
+                            @foreach (var feature in pricingItem.PlanFeatures.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.None))
+                            {
+                                <li>@feature</li>
+                            }
+                        </ul>
+                        <a href="" class="btn btn-send">Sign Up</a>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
